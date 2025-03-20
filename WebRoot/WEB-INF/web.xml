@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>final</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <jsp-config>
+    <taglib>
+    <taglib-uri>http://java.sun.com/jsp/jstl/fmt</taglib-uri>
+    <taglib-location>/WEB-INF/fmt.tld</taglib-location>
+    </taglib>
+    <taglib>
+    <taglib-uri>http://java.sun.com/jsp/jstl/fmt-rt</taglib-uri>
+    <taglib-location>/WEB-INF/fmt-rt.tld</taglib-location>
+    </taglib>
+    <taglib>
+    <taglib-uri>http://java.sun.com/jsp/jstl/core</taglib-uri>
+    <taglib-location>/WEB-INF/c.tld</taglib-location>
+    </taglib>
+    <taglib>
+    <taglib-uri>http://java.sun.com/jsp/jstl/core-rt</taglib-uri>
+    <taglib-location>/WEB-INF/c-rt.tld</taglib-location>
+    </taglib>
+    <taglib>
+    <taglib-uri>http://java.sun.com/jsp/jstl/sql</taglib-uri>
+    <taglib-location>/WEB-INF/sql.tld</taglib-location>
+    </taglib>
+    <taglib>
+    <taglib-uri>http://java.sun.com/jsp/jstl/sql-rt</taglib-uri>
+    <taglib-location>/WEB-INF/sql-rt.tld</taglib-location>
+    </taglib>
+    <taglib>
+    <taglib-uri>http://java.sun.com/jsp/jstl/x</taglib-uri>
+    <taglib-location>/WEB-INF/x.tld</taglib-location>
+    </taglib>
+    <taglib>
+    <taglib-uri>http://java.sun.com/jsp/jstl/x-rt</taglib-uri>
+    <taglib-location>/WEB-INF/x-rt.tld</taglib-location>
+    </taglib>
+    </jsp-config>
+  <servlet>
+  	<servlet-name>getinfo</servlet-name>
+  	<servlet-class>proposal.getinfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>getinfo</servlet-name>
+  	<url-pattern>/getinfo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>getlogin</servlet-name>
+  	<servlet-class>proposal.getlogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>getlogin</servlet-name>
+  	<url-pattern>/getlogin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>getregister</servlet-name>
+  	<servlet-class>proposal.getregister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>getregister</servlet-name>
+  	<url-pattern>/getregister</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>getWeekReport</servlet-name>
+  	<servlet-class>proposal.getWeekReport</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>getWeekReport</servlet-name>
+  	<url-pattern>/getWeekReport</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>getpropose</servlet-name>
+  	<servlet-class>proposal.getpropose</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>getpropose</servlet-name>
+  	<url-pattern>/getpropose</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <servlet-name>getverification</servlet-name>
+  	<servlet-class>proposal.getverification</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>getverification</servlet-name>
+  	<url-pattern>/getverification</url-pattern>
+  </servlet-mapping>
+ <servlet> 
+<servlet-name>searchAll</servlet-name> 
+<servlet-class>com.servlet.searchAll</servlet-class> 
+</servlet> 
+
+  <servlet>
+    <servlet-name>downloadFile</servlet-name>
+  	<servlet-class>com.servlet.downloadFile</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>downloadFile</servlet-name>
+  	<url-pattern>/downloadFile</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+    <servlet-name>DbToXls</servlet-name>
+  	<servlet-class>com.servlet.DbToXls</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DbToXls</servlet-name>
+  	<url-pattern>/DbToXls</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>printProjects</servlet-name>
+  	<servlet-class>com.servlet.printProjects</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>printProjects</servlet-name>
+  	<url-pattern>/printProjects</url-pattern>
+  </servlet-mapping>
+
+<servlet> 
+<servlet-name>deleteProject</servlet-name> 
+<servlet-class>com.servlet.deleteProject</servlet-class> 
+</servlet> 
+<servlet> 
+<servlet-name>UpdateServlet</servlet-name> 
+<servlet-class>com.servlet.UpdateServlet</servlet-class> 
+</servlet> 
+<servlet-mapping> 
+<servlet-name>searchAll</servlet-name> 
+<url-pattern>/searchAll</url-pattern> 
+</servlet-mapping> 
+
+<servlet-mapping> 
+<servlet-name>deleteProject</servlet-name> 
+<url-pattern>/deleteProject</url-pattern> 
+</servlet-mapping> 
+<servlet-mapping> 
+<servlet-name>UpdateServlet</servlet-name> 
+<url-pattern>/UpdateServlet</url-pattern> 
+</servlet-mapping> 
+</web-app>

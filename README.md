@@ -1,2 +1,4 @@
 # project_manage_sub_system
-A small JavaWeb project for Junior year coursework practice
+一个大三课程作业当中实现的小型JavaWeb项目——项目管理子系统
+
+这是一项由四个人组成的团队协同完成的工作，通过tomcat搭建的服务器实现一个简单的项目管理子系统，我在其中主要担当的是账户注册登录模块的开发工作以及部分查询数据接口的数据工作
